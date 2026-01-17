@@ -148,7 +148,7 @@
 // |       *        |
 // |                |
 // |  *          *  |
-// #define X_ROUTINE_AUTO_OFFSET  // Enable this to calculate the Z offset automatically using the 5 points of the bed, (X) pattern
+#define X_ROUTINE_AUTO_OFFSET  // Enable this to calculate the Z offset automatically using the 5 points of the bed, (X) pattern
 
 // |                |
 // |  *             |   
@@ -156,7 +156,7 @@
 // |       *        |
 // |                |
 // |  *          *  |
-#define D_ROUTINE_AUTO_OFFSET  // Enable this to calculate the Z offset automatically using the 4 points of the bed, (Delta) pattern
+// #define D_ROUTINE_AUTO_OFFSET  // Enable this to calculate the Z offset automatically using the 4 points of the bed, (Delta) pattern
 
 
 #define USE_SWITCH_POWER_200W  0 //Default 1: Using a 200W power supply, the nozzle and heating bed cannot be heated at the same time. 0: The >200w power supply used has sufficient power and can be heated at the same time.
@@ -273,7 +273,7 @@
 #define ENABLE_AUTO_OFF_DISPLAY             // Enable automatic turn-off display function & brightness adjustment function
 #if ENABLED(ENABLE_AUTO_OFF_DISPLAY)
 
-  // #define DWIN_DIMM_MENU                    // Enable LCD Menu to Configure Brightness & DIMM parameters
+#define DWIN_DIMM_MENU                    // Enable LCD Menu to Configure Brightness & DIMM parameters
 
   extern int16_t TURN_OFF_TIME;             // turn-off time: 5min
   extern int16_t DIMM_SCREEN_BRIGHTNESS;    // brightness 0x00-0xff:0
@@ -2620,7 +2620,7 @@
 #define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED    0//255 // Value from 0 to 255
 
-// #define EXTRA_PREHEAT_LABELS   // Enable LCD Menu to Configure 2 Extra Preheat Materials
+#define EXTRA_PREHEAT_LABELS   // Enable LCD Menu to Configure 2 Extra Preheat Materials
 #if ENABLED(EXTRA_PREHEAT_LABELS)
   #define PREHEAT_3_LABEL       "PETG"
   #define PREHEAT_3_TEMP_HOTEND 240
@@ -2636,7 +2636,7 @@
 #endif
 
 //  #define PREHEAT_ALERT           // Enable an alert when preheating is complete
-// #define DWIN_CUSTOM_EXTRUDE     // Enable LCD Menu for Custom Extrude Functions
+#define DWIN_CUSTOM_EXTRUDE     // Enable LCD Menu for Custom Extrude Functions
 
 /**
  * @section nozzle park
